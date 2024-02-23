@@ -33,6 +33,6 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public static double valorTotal(double valorInicial) {
-     return valorInicial * 1.19;
+        return valorInicial * 1.19;
     }
 }
