@@ -110,20 +110,20 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="63dp"
-        android:layout_height="20dp"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
         android:text="$300"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.231" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="66dp"
-        android:layout_height="26dp"
+        android:layout_height="30dp"
         android:text="$200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
