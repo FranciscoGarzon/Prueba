@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC34A"
+    android:background="#FFEB3B"
     tools:context=".MainActivity">
 
     <TextView
@@ -58,8 +58,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="128dp"
-        android:layout_height="60dp"
+        android:layout_width="135dp"
+        android:layout_height="59dp"
         android:background="#FEFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +95,7 @@
         android:id="@+id/textView3"
         android:layout_width="73dp"
         android:layout_height="37dp"
-        android:background="#8AC24A"
+        android:background="#FFEB3B"
         android:text="TOTAL"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
