@@ -40,11 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 int totalCebolla = value2 * precioCebolla;
 
                 // Calcular la suma
-                int total = totalTomate + totalCebolla;
+                int total = sum(totalTomate, totalCebolla);
 
                 // Mostrar el resultado en textView2
                 textViewResult.setText(String.valueOf(total));
             }
         });
+    }
+
+    public static int sum(int a, int b) {
+        return a + b;
     }
 }

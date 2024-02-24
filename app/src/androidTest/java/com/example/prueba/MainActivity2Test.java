@@ -30,30 +30,50 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class MainActivityTest {
+public class MainActivity2Test {
 
     @Rule
-    public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
-            new ActivityScenarioRule<>(MainActivity.class);
+    public ActivityScenarioRule<MainActivity2> mActivityScenarioRule =
+            new ActivityScenarioRule<>(MainActivity2.class);
 
     @Test
-    public void mainActivityTest() {
+    public void mainActivity2Test() {
         // Added a sleep statement to match the app's execution delay.
         // The recommended way to handle such scenarios is to use Espresso idling resources:
         // https://google.github.io/android-testing-support-library/docs/espresso/idling-resource/index.html
         try {
-            Thread.sleep(5860);
+            Thread.sleep(5048);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        ViewInteraction materialButton = onView(
-                allOf(withId(R.id.button), withText("Button"),
+        ViewInteraction appCompatEditText = onView(
+                allOf(withId(R.id.editTextName),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
                                         0),
-                                1),
+                                2),
+                        isDisplayed()));
+        appCompatEditText.perform(replaceText("Francisco"), closeSoftKeyboard());
+
+        ViewInteraction appCompatEditText2 = onView(
+                allOf(withId(R.id.editTextLastName),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        appCompatEditText2.perform(replaceText("Garzon"), closeSoftKeyboard());
+
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.btn_siguiente), withText("Siguiente"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                5),
                         isDisplayed()));
         materialButton.perform(click());
 
@@ -66,18 +86,28 @@ public class MainActivityTest {
             e.printStackTrace();
         }
 
-        ViewInteraction appCompatEditText = onView(
+        ViewInteraction appCompatEditText3 = onView(
                 allOf(withId(R.id.editTextText),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
                                         0),
-                                3),
+                                6),
                         isDisplayed()));
-        appCompatEditText.perform(replaceText("1000"), closeSoftKeyboard());
+        appCompatEditText3.perform(replaceText("5"), closeSoftKeyboard());
+
+        ViewInteraction appCompatEditText4 = onView(
+                allOf(withId(R.id.editTextText2),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                7),
+                        isDisplayed()));
+        appCompatEditText4.perform(replaceText("2"), closeSoftKeyboard());
 
         ViewInteraction materialButton2 = onView(
-                allOf(withId(R.id.btn_siguienbte), withText("Button"),
+                allOf(withId(R.id.button), withText("Calcular"),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
@@ -86,17 +116,11 @@ public class MainActivityTest {
                         isDisplayed()));
         materialButton2.perform(click());
 
-        ViewInteraction editText = onView(
-                allOf(withId(R.id.editTextText), withText("1000"),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        editText.check(matches(withText("1000")));
-
         ViewInteraction textView = onView(
-                allOf(withId(R.id.resultado), withText("1190.0"),
+                allOf(withId(R.id.textViewAppTitle), withText("DIGI FRUVER"),
                         withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
-        textView.check(matches(withText("1190.0")));
+        textView.check(matches(withText("DIGI FRUVER")));
     }
 
     private static Matcher<View> childAtPosition(
