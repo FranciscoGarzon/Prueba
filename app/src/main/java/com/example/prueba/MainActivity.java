@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText editText1, editText2;
     private TextView textViewResult;
-    private int precioTomate = 500;
-    private int precioCebolla = 300;
+    private int precioTomate = 300;
+    private int precioCebolla = 200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
