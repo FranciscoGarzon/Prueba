@@ -77,7 +77,7 @@ public class MainActivityTest {
         appCompatEditText.perform(replaceText("1000"), closeSoftKeyboard());
 
         ViewInteraction materialButton2 = onView(
-                allOf(withId(R.id.button2), withText("Button"),
+                allOf(withId(R.id.btn_siguienbte), withText("Button"),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
