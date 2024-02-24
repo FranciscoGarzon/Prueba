@@ -11,7 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="159dp"
         android:layout_height="55dp"
-        android:text="Valor total"
+        android:text="Apellido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.547"
@@ -23,7 +23,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:id="@+id/textView3"
         android:layout_width="157dp"
         android:layout_height="54dp"
-        android:text="Valor Neto"
+        android:text="Nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
@@ -57,26 +57,21 @@
         app:layout_constraintVertical_bias="0.45" />
 
     <TextView
-        android:id="@+id/resultado"
-        android:layout_width="157dp"
-        android:layout_height="54dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="101dp"
         android:layout_height="60dp"
-        android:text="CALCULO IVA"
+        android:text="PRECIOS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="168dp"
+        android:layout_height="56dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="466dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
