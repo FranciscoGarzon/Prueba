@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText editText1, editText2;
     private TextView textViewResult;
+    private int precioTomate = 500;
+    private int precioCebolla = 300;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 // Convertir los valores a números enteros
                 int value1 = Integer.parseInt(value1Str);
                 int value2 = Integer.parseInt(value2Str);
+                int totalTomate = value1 * precioTomate;
+                int totalCebolla = value2 * precioCebolla;
 
                 // Calcular la suma
-                int total = value1 + value2;
+                int total = totalTomate + totalCebolla;
 
                 // Mostrar el resultado en textView2
                 textViewResult.setText(String.valueOf(total));
